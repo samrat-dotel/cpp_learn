@@ -6,8 +6,13 @@ void circleArea(int radius){
     float area;
     cout<<"Enter radius:";
     cin>>radius;
-    area=3.1415*pow(radius,2);
-    cout<<"Area of the circle is "<<area;
+    if (radius<0){
+            cout<<"Radius cannot be negative.";
+        }
+    else{ 
+        area = 3.1415*pow(radius,2);
+        cout<<"The area of circle is "<<area<<endl;
+        }
 }
 
 void rectangleArea(int length, int breadth){
@@ -16,8 +21,13 @@ void rectangleArea(int length, int breadth){
     cin>>length;
     cout<<"Enter breadth:";
     cin>>breadth;
-    area=length*breadth;
-    cout<<"Area of the rectangle is "<<area;
+    if (length<0 || breadth<0){
+            cout<<"Length or breadth cannot be negative.";
+        }
+    else{ 
+        area = length * breadth;
+        cout<<"The area of rectangle is "<<area<<endl;
+        }
 }
 
 void triangleArea(int base, int height){
@@ -26,8 +36,13 @@ void triangleArea(int base, int height){
     cin>>base;
     cout<<"Enter height:";
     cin>>height;
-    area=0.5*base*height;
-    cout<<"Area of the triangle is "<<area;
+    if (base<0 || height<0){
+            cout<<"base or hright cannot be 0.";
+        }
+    else{ 
+        area = 0.5 * base * height;
+        cout<<"The area of triangle is "<<area<<endl;
+        }
 }
 
 main(){
