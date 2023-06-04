@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-void circleArea(int radius){
+float calculateArea(int radius){
     float area;
     cout<<"Enter radius:";
     cin>>radius;
@@ -15,7 +15,7 @@ void circleArea(int radius){
         }
 }
 
-void rectangleArea(int length, int breadth){
+float calculateArea(int length, int breadth){
     float area;
     cout<<"Enter length:";
     cin>>length;
@@ -30,7 +30,7 @@ void rectangleArea(int length, int breadth){
         }
 }
 
-void triangleArea(int base, int height){
+float triangleArea(int base, int height){
     float area;
     cout<<"Enter base:";
     cin>>base;
@@ -50,12 +50,14 @@ main(){
     cout<<"Enter 1 to find area of circle, 2 for rectangle and 3 for triangle:"<<endl;
     cin>>n;
     if (n==1){
-        float r;
-        circleArea(r);
+        float radius;
+        float circleArea;
+        circleArea = calculateArea(radius);
     }
     else if (n==2){
-        float l,b;
-        rectangleArea(l, b);
+        float length,breadth;
+        float rectangleArea;
+        rectangleArea = calculateArea(length,breadth);
     }
     else if (n==3){
         float h,a;
@@ -65,3 +67,5 @@ main(){
         cout<<"Wrong command"<<endl;
     }
 }
+//Here area of circle and area of rectangle shows function overloading as they have same function name but performs
+    //different tasks.
