@@ -16,5 +16,5 @@ main(){
     cout<<"Enter the age:";
     cin>>age;
 
-    cout<<"The student with name "<<name<<", age "<<age<<" and roll number "<<rollNo<<" got "<<marks<<"marks in his exam";
+    cout<<"The student with name "<<name<<", age "<<age<<" years and roll number "<<rollNo<<" got "<<marks<<" marks in his exam.";
 }
