@@ -37,7 +37,7 @@ void triangleArea(int base, int height){
     cout<<"Enter height:";
     cin>>height;
     if (base<0 || height<0){
-            cout<<"Base or height cannot be 0.";
+            cout<<"Base or height cannot be negative.";
         }
     else{ 
         area = 0.5 * base * height;
