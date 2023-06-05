@@ -32,11 +32,11 @@ class Area{
         }
     }
 
-    void triangleArea(int base, int height){
+    float calculateArea(int base, float height){
         float area;
-        cout<<"Enter the base of rectangle:";
+        cout<<"Enter the base of triangle:";
         cin>>base;
-        cout<<"Enter the height of rectangle:";
+        cout<<"Enter the height of triangle:";
         cin>>height;
         if (base<0 || height<0){
             cout<<"base or height cannot be negative.";
@@ -59,13 +59,15 @@ main(){
         circleArea = a.calculateArea(radius);
     }
     else if (n==2){
-        float length,breadth;
+        int length,breadth;
         float rectangleArea;
         rectangleArea = a.calculateArea(length,breadth);
     }
     else if (n==3){
-        int b,h;
-        a.triangleArea(b,h);
+        int b;
+        float h;
+        float triangleArea;
+        triangleArea = a.calculateArea(b,h);
     }
     else{
         cout<<"Wrong command";
