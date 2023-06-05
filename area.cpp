@@ -30,7 +30,7 @@ float calculateArea(int length, int breadth){
         }
 }
 
-float triangleArea(int base, int height){
+float calculateArea(int base, float height){
     float area;
     cout<<"Enter base:";
     cin>>base;
@@ -55,13 +55,14 @@ main(){
         circleArea = calculateArea(radius);
     }
     else if (n==2){
-        float length,breadth;
+        int length,breadth;
         float rectangleArea;
         rectangleArea = calculateArea(length,breadth);
     }
     else if (n==3){
-        float h,a;
-        triangleArea(a, h);
+        int a;
+        float h, triangleArea;
+        triangleArea = calculateArea(a, h);
     }
     else{
         cout<<"Wrong command"<<endl;
