@@ -39,7 +39,7 @@ class Area{
         cout<<"Enter the height of rectangle:";
         cin>>height;
         if (base<0 || height<0){
-            cout<<"base or hright cannot be 0.";
+            cout<<"base or height cannot be negative.";
         }
         else{ 
         area = 0.5 * base * height;
