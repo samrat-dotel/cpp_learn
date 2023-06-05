@@ -68,5 +68,3 @@ main(){
         cout<<"Wrong command"<<endl;
     }
 }
-//Here area of circle and area of rectangle shows function overloading as they have same function name but performs
-    //different tasks.
