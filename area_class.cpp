@@ -4,7 +4,7 @@ using namespace std;
 
 class Area{
     public:
-    void circleArea(int radius){
+    float calculateArea(int radius){
         float area;
         cout<<"Enter the radius of circle:";
         cin>>radius;
@@ -17,7 +17,7 @@ class Area{
         }
     }
 
-    void rectangleArea(int length, int breadth){
+    float calculateArea(int length, int breadth){
         float area;
         cout<<"Enter the length of rectangle:";
         cin>>length;
@@ -54,12 +54,14 @@ main(){
     cin>>n;
     Area a;
     if (n==1){
-        int r;
-       a.circleArea(r);
+        float radius;
+        float circleArea;
+        circleArea = a.calculateArea(radius);
     }
     else if (n==2){
-        int l,b;
-        a.rectangleArea(l,b);
+        float length,breadth;
+        float rectangleArea;
+        rectangleArea = a.calculateArea(length,breadth);
     }
     else if (n==3){
         int b,h;
