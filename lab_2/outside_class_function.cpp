@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class abc{
+class Student{
     private:
     int rollno;
     float marks,age;
@@ -22,7 +22,7 @@ class abc{
     void display();
 };
 
-void abc::display(){
+void Student::display(){
     cout<<"Name:"<<name<<endl;
     cout<<"Roll number:"<<rollno<<endl;
     cout<<"Age:"<<age<<endl;
@@ -30,7 +30,7 @@ void abc::display(){
 }
 
 main(){
-    abc a;
-    a.readdata();
-    a.display();
+    Student s;
+    s.readdata();
+    s.display();
 }
