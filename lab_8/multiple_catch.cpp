@@ -7,10 +7,8 @@ int main() {
     cout << "Enter two integers: ";
 
     try {
-        // Input first integer
         cin >> num1;
 
-        // Check for invalid input
         if (cin.fail()) {
             throw runtime_error("Invalid input for the first integer.");
         }
